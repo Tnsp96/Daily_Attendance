@@ -1,0 +1,276 @@
+<html>
+<head><title>Deen_College_Daily_Attendance</title>
+<link rel="icon" type="image/x-icon" href="LOGO1.ico">
+<style>
+body {
+    line-height: 1.6;
+    margin: 1.5em;
+    
+}
+
+th {
+    background-color: lightgray;
+    color: black;
+    padding: 0.5em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #ffecec;
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: #f00;
+    text-align: center;
+}
+th.missed-col1 {
+    background-color: lightgreen;
+}
+
+td.missed-col1 {
+    background-color: lightgreen;
+    color: green;
+    text-align: center;
+}
+th.missed-col2 {
+    background-color: lightblue;
+}
+
+td.missed-col2 {
+    background-color: lightblue;
+    color: green;
+    text-align: center;
+}
+th.name-col {
+    text-align: left;
+}
+td.name-col {
+    background-color: lightgray;
+    color: black;
+    text-align: left;
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+</style>
+</head>
+<body>
+<p align=center><font color=blue size=5><b>DEEN COLLEGE OF ARTS AND SCIENCE</b></font><br />
+<font size=3><b>KDUVANGUDI - NIDUR</b></font></td></tr><br />
+<font size=3><b>MAYILADUTHURAI</b></font><br />
+<font color=red><u>DAILY STUDENTS ATTENDANCE</u></font></p>
+<h5 align=right>DATE: <input type="date" id="date"></h5>
+        <table align=center>
+            <thead>
+                <tr>
+                    <th class="name-col">Class Name</th>
+                    <th class="missed-col2">Strength</th>
+                    <th class="missed-col1">Present</th>
+                    
+                    <th class="missed-col">Absent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="student">
+                    <td class="name-col">I BA(ENG)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">I BBA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                   
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">I BCOM</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">I BCA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">I BSc(CS)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                 <tr class="student">
+                    <td class="name-col">II BA(ENG)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BBA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                   
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BCOM</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BCA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BSc(CS)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BSc(CHE)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II BSc(MAT)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                 <tr class="student">
+                    <td class="name-col">III BA(ENG)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BBA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                   
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BCOM</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BCA</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BSc(CS)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BSc(CHE)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">III BSc(MAT)</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">II MCOM</td>
+                    <td class="missed-col2"><input type="text" onblur="findTotal()" name="input_a" class="amount" /></td>
+                    <td class="missed-col1"><input type="text" onblur="findTotal1()" name="input_a" class="amount1" /></td>
+                    
+                    <td class="missed-col"><input type="text" onblur="findTotal2()" name="input_a" class="amount2" /></td>
+                </tr>
+                <tr class="student">
+                    <td class="name-col">TOTAL</td>
+                    <td class="missed-col2"><input type="text" name="sum" id="totalordercost" readonly /></td>
+                    <td class="missed-col1"><input type="text" name="sum1" id="Text1" readonly /></td>
+                    
+                    <td class="missed-col"><input type="text" name="sum2" id="Text2" readonly /></td>
+                </tr>
+            </tbody>
+        </table>
+<center><button onclick="window.print()" class="button button5">Print this page</button></center>
+<script>
+    function findTotal() {
+        var arr = document.getElementsByClassName('amount');
+        var tot = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+        }
+        document.getElementById('totalordercost').value = tot;
+    }
+    function findTotal1() {
+        var arr = document.getElementsByClassName('amount1');
+        var tot = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+        }
+        document.getElementById('Text1').value = tot;
+    }
+    function findTotal2() {
+        var arr = document.getElementsByClassName('amount2');
+        var tot = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+        }
+        document.getElementById('Text2').value = tot;
+    }
+</script>
+</body>
+</html>
